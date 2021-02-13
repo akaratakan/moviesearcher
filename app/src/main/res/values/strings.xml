@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Challenge</string>
+    <string name="test">test</string>
+    <string name="credits">Welcome</string>
+    <string name="search_movies">Search Movies</string>
+    <string name="roll_the_ball">Roll The Ball</string>
+    <string name="lorem_ipsum_large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus quam quis
+        euismod suscipit. Proin scelerisque risus scelerisque, iaculis dolor vel, sagittis lorem. Etiam posuere quis
+        mauris vitae dictum. Nullam in tempor risus. Nulla varius tincidunt semper. Nam dictum augue et metus iaculis
+        euismod. Nam commodo et justo ut bibendum. Morbi et dui semper, rutrum elit nec, pretium augue. Donec at
+        tincidunt nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam
+        aliquet molestie purus, in pretium erat fringilla ac. Quisque ac risus at leo eleifend maximus ac ut sem.
+        Quisque lobortis felis non neque commodo dictum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus quam quis
+        euismod suscipit. Proin scelerisque risus scelerisque, iaculis dolor vel, sagittis lorem.</string>
+    <string name="search_input_hint">Please Enter At Least 3 letter</string>
+    <string name="imdb_rate">Imdb Rate:</string>
+    <string name="genre">Genre:</string>
+    <string name="director_name">Director:</string>
+    <string name="actors">Actors:</string>
+    <string name="search_movie">Search Movie</string>
+    <string name="ok">Okay</string>
+    <string name="error">Error</string>
+    <string name="error_content">An error occured.</string>
+</resources>
