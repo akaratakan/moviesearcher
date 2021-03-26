@@ -42,8 +42,11 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         initListener()
         binding.searchButton.isEnabled = false
         viewModel.searchedMovieResponse.observe(viewLifecycleOwner) {
-            prepareRecyclerView(it.search.toMutableList())
-
+            if (this::movieAdapter.isInitialized) {
+                movieAdapter.updateList(it.search.toMutableList())
+            } else {
+                prepareRecyclerView(it.search.toMutableList())
+            }
         }
         viewModel.loadingDetection.observe(viewLifecycleOwner) {
             (activity as MainActivity).showLoading(it)
@@ -59,7 +62,6 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         }
         binding.searchButton.setOnClickListener {
             it.hideKeyboard()
-            if (this::movieAdapter.isInitialized) movieAdapter.clearList()
             viewModel.getMovies(binding.searchKeyword.text.toString())
         }
     }
